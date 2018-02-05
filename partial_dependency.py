@@ -4,6 +4,7 @@ def partial_dependency(model, X, y, feature_ids = [], f_id = -1):
     Calculate the dependency (or partial dependency) of a response variable on a predictor (or multiple predictors)
     1. Sample a grid of values of a predictor.
     2. For each value, replace every row of that predictor with this value, calculate the average prediction.
+    3. Return a grid and average predictors
     """
 
     X_temp = X.copy()
