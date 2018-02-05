@@ -1,0 +1,3 @@
+def next_weekday(date):
+    shift = 1 + ((now.weekday()//4)*(6-now.weekday()))
+    return shift
